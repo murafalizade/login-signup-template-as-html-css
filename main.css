@@ -1,0 +1,23 @@
+.checking {
+  display: flex;
+  flex-direction: row; }
+  .checking label {
+    margin-top: 4.25px;
+    font-weight: 400;
+    font-size: 20px;
+    width: auto;
+    height: 40px; }
+  .checking input {
+    margin-top: 0%; }
+
+.header-title {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 20px; }
+
+.container {
+  margin-top: 50px;
+  box-shadow: 0 4px 8px 0 rgba(134, 169, 235, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .container .inp:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }

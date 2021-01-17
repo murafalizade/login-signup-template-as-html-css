@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="login-pagee.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-10 col-md-5">
+                <div class="formm">
+                    <span id="icom"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times-circle"
+                            class="svg-inline--fa fa-times-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z">
+                            </path>
+                        </svg></span>
+                    <h3 class="display-4">Sign Up</h3>
+                    <p><small>All input must completed</small> </p>
+                    <form action="" class="form">
+                        <label class="switch">
+                            <input class="toggle" type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        <input type="name" class="form-control d-inline-block" placeholder="First Name">
+                        <input type="name" class="form-control d-inline-block" placeholder="Last Name">
+                    </form>
+                    <input type="email" class="form-control mb-3 d-block" placeholder="Email">
+                    <input type="password" class="form-control mb-3 d-block" id="psw" placeholder="Password">
+                    <input type="password" class="form-control mb-3 d-block" id="pswr" placeholder="Password confirm">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> I accepted all rules
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary">Sign Up</button>
+                    <hr style="border-width: 3px;">
+                    <h3 style="font-weight: 400;font-size: 15px;">If you already have account <a
+                            href="signup-page.html">Log In</a></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.btn').on('click', function () {
+                var sifr = $('#psw').val();
+                var sifrt = $('#pswr').val();
+                if (sifr == sifrt) {
+                }
+                else {
+                    alert('password not comfirmed');
+                }
+            });
+            var tog = false;
+            $('.toggle').on('click', function () {
+                if (tog == false) {
+                    $('.formm').css('filter', 'invert(1)');
+                    tog = true;
+                }
+                else {
+                    $('.formm').css('filter', 'invert(0)');
+                    tog = false;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
